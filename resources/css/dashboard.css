@@ -1,0 +1,305 @@
+
+@media (min-width:1001px) and (max-width: 5281px){
+    *{
+        font-family: sans-serif;
+    }
+.dash{
+    display:  flex;
+    flex-direction: row;
+
+}
+
+#leftbar{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 20%;
+   /* border: 1px solid black;*/
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+#setTime {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#nextTime{
+    color: red;
+    font-weight: bold;
+}
+
+#gamerName{
+    height: 350px;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#gamerName h2{
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#listName p{
+    list-style-type: none;
+    background-color: rgba(0, 255, 255, 0.897);
+    border-bottom: 1px solid white;
+    margin-bottom: -15px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#timer, #gamerName{
+    margin-bottom: 50px;
+    border:1px solid black;
+    border: 2px solid white;
+    box-shadow: 1px 1px 12px #555;
+}
+
+#gameBoard{
+    background-image: url("http://192.168.137.1/squidgame/resources/image/back.png");
+    background-repeat: no-repeat;
+    background-size: 170%;
+    height: 80%;
+    width: 60%;
+    border: 2px solid white;
+    box-shadow: 1px 1px 12px #555;
+    margin-right: 30px;
+}
+
+
+#gameInfo{
+    height: 80%;
+    width: 10%;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+}
+
+#eliminatedInfo{
+    height: 25%;
+    width: 100%;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 12px #555;
+    display: none;
+}
+
+#winCash{
+    text-align: center;
+    box-shadow: 1px 1px 12px #555;
+    width: 100%;
+}
+
+#inWin{
+    margin-left:10%;
+    width:100px; 
+    height:100px; 
+    border-radius:50px; 
+    background-color:whitesmoke; 
+    overflow:hidden; 
+    position:relative;
+}
+
+#barr{
+    border-radius:10px 30px;
+    background-color:red; 
+    overflow:hidden; 
+    position:absolute; 
+    bottom:0;
+    text-align:center;
+    color:white; 
+    font-weight:bold;
+}
+
+#eliminatedInfo h3{
+    text-align: center;
+}
+
+#idEliminated{
+    font-weight: bold;
+    color: red;
+}
+
+input:focus{  /*NE PAS CHARGER LE STYLE DU NAVIGATEUR*/
+	outline: transparent;
+}
+#deadState{
+    background-image: url("http://192.168.137.1/squidgame/resources/image/back.png");
+    width: 100%;
+    height: 600%;
+    min-height: 600%;
+    min-width: 100%;
+}
+
+#deadState p{
+    margin-top: 25%;
+    color: red;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 5px;
+}
+
+}
+
+
+@media (min-width:320px) and (max-width: 1000px){
+
+    *{
+        font-family: sans-serif;
+    }
+    
+    .dash{
+        display:  flex;
+        flex-direction: column;
+    
+    }
+    
+    #leftbar{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        width: 70%;
+       /* border: 1px solid black;*/
+        margin-left: 15%;
+    }
+    
+    #setTime {
+        height: 10%;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    #nextTime{
+        color: red;
+        font-weight: bold;
+    }
+    
+    #gamerName{
+        height: 200px;
+        width: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    
+    #gamerName h2{
+        font-weight: bold;
+        background-color: blue;
+        color: white;
+        text-align: center;
+    }
+    
+    #listName p{
+        list-style-type: none;
+        background-color: rgba(0, 255, 255, 0.897);
+        border-bottom: 1px solid white;
+        margin-bottom: -15px;
+        font-size: 20px;
+        font-weight: bold;
+    
+    }
+    
+    #timer, #gamerName{
+        margin-bottom: 50px;
+        border:1px solid black;
+        border: 2px solid white;
+        box-shadow: 1px 1px 12px #555;
+    }
+    
+    #gameBoard{
+        background-image: url("http://192.168.137.1/squidgame/resources/image/back.png");
+        background-repeat: no-repeat;
+        background-size: 170%;
+        height: 100%;
+        width: 98%;
+        border: 2px solid white;
+        box-shadow: 1px 1px 12px #555;
+        margin-bottom: 12%;
+    }
+    
+    
+    #gameInfo{
+        height: 80%;
+        width: 100%;
+        /*border: 1px solid black;*/
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #eliminatedInfo{
+        height: 25%;
+        width: 60%;
+        margin-left: 20%;
+        box-shadow: 1px 1px 12px #555;
+        display: none;
+    }
+    
+    #winCash{
+        text-align: center;
+        box-shadow: 1px 1px 12px #555;
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    #inWin{
+        margin-left:30%;
+        width:100px; 
+        height:100px; 
+        border-radius:50px; 
+        background-color:whitesmoke; 
+        overflow:hidden; 
+        position:relative;
+    }
+
+    #barr{
+        border-radius:10px 30px;
+        background-color:red; 
+        overflow:hidden; 
+        position:absolute; 
+        bottom:0;
+        text-align:center;
+        color:white; 
+        font-weight:bold;
+    }
+    
+    #eliminatedInfo h3{
+        text-align: center;
+    }
+    
+    #idEliminated{
+        font-weight: bold;
+        color: red;
+    }
+    
+    input:focus{  /*NE PAS CHARGER LE STYLE DU NAVIGATEUR*/
+        outline: transparent;
+    }
+    #deadState{
+        background-image: url("http://192.168.137.1/squidgame/resources/image/back.png");
+        width: 100%;
+        height: 600%;
+        min-height: 600%;
+        min-width: 100%;
+    }
+    
+    #deadState p{
+        margin-top: 25%;
+        color: red;
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        border: 10px solid white;
+        border-radius: 5px;
+    }
+    
+    }

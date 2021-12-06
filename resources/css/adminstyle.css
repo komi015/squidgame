@@ -1,0 +1,64 @@
+#topTool{
+    display: flex;
+    flex-direction: row;
+}
+
+#adminBoard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#topTool div{
+    height: 150px;
+    width: 20%;
+    border: 1px solid lemonchiffon;
+    background-color: lemonchiffon;
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10%;
+    text-align: center;
+}
+
+#liveNumber{
+    text-align: center;
+    width: 30%;
+    border: 50px solid whitesmoke;
+    background-color: whitesmoke;
+    font-size: 80px;
+    margin-top: 70px;
+    color: red;
+    margin-left: 30%;
+    margin-bottom: 70px;
+}
+
+#gamerName{
+    height: 350px;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#gamerName h2{
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#listName p{
+    list-style-type: none;
+    background-color: rgba(0, 255, 255, 0.897);
+    border-bottom: 1px solid white;
+    margin-bottom: -15px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#gamerName{
+    border:1px solid black;
+    border: 2px solid white;
+    box-shadow: 1px 1px 12px #555;
+}

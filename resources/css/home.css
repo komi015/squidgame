@@ -1,0 +1,340 @@
+
+@media (min-width:1001px) and (max-width: 5281px){ /* hi-res laptops and desktops */ 
+
+    @font-face{
+        font-family: 'bold';
+        src: url("http://192.168.137.1/squidgame/resources/font/Comfortaa-Bold.ttf");
+    }
+    @font-face{
+        font-family: 'light';
+        src: url("http://192.168.137.1/squidgame/resources/font/Comfortaa-Light.ttf");
+    }
+    @font-face{
+        font-family: 'regular';
+        src: url("http://192.168.137.1/squidgame/resources/font/Comfortaa-Regular.ttf");
+    }
+
+ *{
+     font-family: regular;
+ }   
+
+body{
+    background-image: url("http://192.168.137.1/squidgame/resources/image/back.png");
+    
+    margin:0;
+}
+
+#back{ /*add*/
+    background-color: rgba(0, 0, 0, 0.900);
+    height: 125vh;
+}
+
+#ads{
+    font-size: 120%;
+    text-align: center;
+    color: white;
+    font-family: light;
+}
+
+body h1{
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+    color: red;
+    margin: 0;
+    margin-bottom: 6%;
+    font-family: bold;
+}
+
+#livePlayerdisplays, #infoToPlayer{
+    text-align: center;
+
+}
+
+body #livePlayerdisplays{
+    color: white;
+    background-color: rgb(30, 30, 250);
+    font-size: 30px;
+    font-weight: bold;
+    border: 10px solid rgb(30, 30, 252);
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#infoToPlayer{ /* 1 */
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+}
+
+#shareLink{
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+#share{
+    background-color: green;
+    border: 5px solid green;
+}
+
+#copyLink{
+    color: white;
+    background-color: blue;
+    border: 5px solid blue;
+}
+
+/* STYLE FOR THE LOGIN BOX */
+#errorInfo,#errorInfo2{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#loginBox{ /*1*/
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    box-shadow: 1px 1px 12px #555;
+    border-radius: 2px;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+
+#loginBox h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* STYLE FOR THE CREATE CCOUNT BOX*/
+
+#registBox{
+    display: none;
+}
+
+#name, #password, #email, #emailOld, #passwordOld{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid red;
+    margin-bottom: 3%;
+    width: 60%;
+    margin-left: 20%;
+    background-color: none;
+}
+
+
+#submiteLogin, #submiteRegister{
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    border: 5px solid red;
+    font-weight: bold;
+    width: 20%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+
+}
+
+#loginNow, #register{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: cornflowerblue;
+}
+
+#regulation{
+    color: white;
+    text-align: center;
+    font-family: bold;
+    background-image: none;
+    background-color: black;
+}
+
+input:focus{  /*NE PAS CHARGER LE STYLE DU NAVIGATEUR*/
+	outline: transparent;
+}
+
+
+    /*for error*/
+    #errorMs{
+        text-align: center;
+        color: red;
+        margin-top: 25%;
+        background-color: white;
+    }
+}
+
+
+
+@media (min-width:320px) and (max-width: 1000px){ /* hi-res laptops and desktops */ 
+
+    @font-face{
+        font-family: 'bold';
+        src: url("http://192.168.137.1/squidgame/resources/font/Comfortaa-Bold.ttf");
+    }
+    @font-face{
+        font-family: 'light';
+        src: url("http://192.168.137.1/squidgame/resources/font/Comfortaa-Light.ttf");
+    }
+    @font-face{
+        font-family: 'regular';
+        src: url("http://192.168.137.1/squidgame/resources/font/Comfortaa-Regular.ttf");
+    }
+    
+    *{
+        font-family: regular;
+    }
+
+    body{
+        background-image: url("http://192.168.137.1/squidgame/resources/image/back.png");
+        margin: 0;
+        
+    }
+    #back{ /*add*/
+        
+        background-color: rgba(0, 0, 0, 0.900);
+        height: 125vh;
+    }
+
+    #ads{
+        font-size: 120%;
+        text-align: center;
+        color: white;
+        font-family: light;
+    }
+    
+    body h1{
+        font-family: bold;
+        font-size: 250%;
+        font-weight: bold;
+        color:red;
+        margin:0;
+        margin-bottom: 6%;
+        text-align: center;
+    }
+    
+    #livePlayerdisplays, #infoToPlayer{
+        text-align: center;
+    }
+    
+    body #livePlayerdisplays{
+        color: white;
+        background-color: rgb(30, 30, 250);
+        font-size: 30px;
+        font-weight: bold;
+        border: 10px solid rgb(30, 30, 252);
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    #infoToPlayer{ /* 1 */
+        font-size: 22px;
+        color: white;
+        text-decoration: underline;
+    }
+    
+    #shareLink{
+        display: block;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+    
+    #share{
+        background-color: green;
+        border: 5px solid green;
+    }
+    
+    #copyLink{
+        color: white;
+        background-color: blue;
+        border: 5px solid blue;
+    }
+    
+    /* STYLE FOR THE LOGIN BOX */
+    #errorInfo,#errorInfo2{
+        color: red;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+    
+    #loginBox{ /*1*/
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+        box-shadow: 1px 1px 12px #555;
+        border-radius: 2px;
+        margin-left: 5%;
+        margin-top: 3%;
+        
+    }
+    
+    #loginBox h3{
+        text-align: center;
+        font-size: 200%;
+    }
+    
+    /* STYLE FOR THE CREATE CCOUNT BOX*/
+    
+    #registBox{
+        display: none;
+    }
+    
+    #name, #password, #email, #emailOld, #passwordOld{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid red;
+        margin-bottom: 3%;
+        width: 60%;
+        margin-left: 20%;
+        background-color: none;
+    }
+    
+    
+    #submiteLogin, #submiteRegister{
+        color: white;
+        font-size: 20px;
+        background-color: red;
+        border: 5px solid red;
+        font-weight: bold;
+        width: 20%;
+        margin-left: 20%;
+        margin-bottom: 5%;
+    
+    }
+    
+    #loginNow, #register{
+        color: blue;
+        text-decoration: underline;
+        text-decoration-color: cornflowerblue;
+    }
+    
+    #regulation{
+        color: white;
+        text-align: center;
+        font-family: bold;
+        background-image: none;
+        background-color: black;
+    }
+
+    #regulation a{
+        color: white;
+    }
+
+    input:focus{  /*NE PAS CHARGER LE STYLE DU NAVIGATEUR*/
+        outline: transparent;
+    }
+    
+    /*for error*/
+    #errorMs{
+        text-align: center;
+        color: rgb(240, 23, 23);
+        margin-top: 55%;
+        background-color: white;
+    }
+    }

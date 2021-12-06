@@ -1,0 +1,29 @@
+
+#gameLink{
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#gameInput{
+    margin-top: 20%;
+    text-align: center;
+}
+
+#sendAnswer{
+    color: white;
+    background-color: red;
+    margin-left: 45%;
+    margin-bottom: 30%;
+}
+
+input:focus{  /*NE PAS CHARGER LE STYLE DU NAVIGATEUR*/
+	outline: transparent;
+}
+
+#youWin{
+    font-size: 50px;
+    color: green;
+    
+}
