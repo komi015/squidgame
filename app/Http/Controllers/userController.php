@@ -137,33 +137,23 @@ class userController extends Controller
 
 function sendEmailAdmin($name){
 
-    $transport = (new Swift_SmtpTransport('ssl0.ovh.net', 587))
-  ->setUsername('squidgame@cilabss.com')
-  ->setPassword('azerty1Fsesure')
-;
-
-$mailer = new Swift_Mailer($transport);
-
-// Create a message
-$message = (new Swift_Message('Wonderful Subject'))
-  ->setFrom(['squidgame@cilabss.com' => 'John Doe'])
-  ->setTo(['komi2015mc@gmail.com', 'other@domain.org' => 'A name'])
-  ->setBody('Here is the message itself')
-  ;
-
-// Send the message
-$result = $mailer->send($message);
-    
-}
-function sendEmailUser($email, $name){
-
-    $headers ='From: squidgame@cilabss.com'."\n";
+$headers ='From: squidgame@cilabss.com'."\n";
     $headers .='Reply-To: squidgame@cilabss.com'."\n";
     $headers .='Content-Type: text/plain; charset="iso-8859-1"'."\n";
     $headers .='Content-Transfer-Encoding: 8bit';
+    mail('admin_email','New Account on Squid Game',
+   'Hi Manou, new Squid game player : '.$name.' ...it comming', $headers);
+
+}
+function sendEmailUser($email, $name){
+
+    $headers ='From: server_email'."\n";
+    $headers .='Reply-To: server_email'."\n";
+    $headers .='Content-Type: text/plain; charset="iso-8859-1"'."\n";
+    $headers .='Content-Transfer-Encoding: 8bit';
     mail($email,'New Account on Squid Game',
-   'Welcome to Squid Game '.$name.'!. Wait Wait for the number of players to reach 456. We will send you an Email, but log in often to check. 
-   sq.cilabss.com', $headers);
+   'Welcome to Squid Game '.$name.'!. Wait, Wait for the number of players to reach 456. We will send you an Email, but log in often to check. 
+   https://sq.cilabss.com', $headers);
 }
 
 function getUserIP() {
